@@ -26,17 +26,17 @@ import cv2
 
 # OpenCV Python Tutorial 3
 
-import numpy as np
+# import numpy as np
 
-capture = cv2.VideoCapture(0)
+# capture = cv2.VideoCapture(0)
 
-while True:
-    ret, frame = capture.read()
+# while True:
+#    ret, frame = capture.read()
     
-    cv2.imshow("Frame", frame)
+#    cv2.imshow("Frame", frame)
     
-    if cv2.waitKey(1) == ord("q"):
-        break
+#    if cv2.waitKey(1) == ord("q"):
+#        break
     
-capture.release()
-cv2.destroyAllWindows()
+# capture.release()
+# cv2.destroyAllWindows()
