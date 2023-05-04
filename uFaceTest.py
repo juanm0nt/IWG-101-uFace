@@ -62,3 +62,33 @@ import cv2
 #     cv2.imshow("Frame", image)
 
 #     if cv2.waitKey(1) == ord("q"):
+
+# ---OpenCV Python Tutorial 5---
+
+# import numpy as np
+
+# capture = cv2.VideoCapture(0)
+
+# while True:
+#     ret, frame = capture.read()
+#     width = int(capture.get(3))
+#     height = int(capture.get(4))
+    
+#     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    
+#     # lower_blue = np.array([90, 50, 50])
+#     # upper_blue = np.array([130, 255, 255])
+    
+#     lower_red = np.array([170, 50, 50])
+#     upper_red = np.array([180, 255, 255])
+    
+#     mask = cv2.inRange(hsv, lower_red, upper_red)
+#     result = cv2.bitwise_and(frame, frame, mask=mask)
+    
+#     cv2.imshow("Webcam", result)
+    
+#     if cv2.waitKey(1) == ord("q"):
+#         break
+    
+# capture.release()
+# cv2.destroyAllWindows()
